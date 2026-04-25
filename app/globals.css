@@ -1,4 +1,51 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warna Jasa Service Bali */
+  --jsb-teal: #00D1C1;
+  --jsb-blue: #0077B6;
+  --jsb-yellow: #FFD700;
+  --text-on-dark: #ffffff;
+  
+  /* Mode Terang */
+  --bg-primary: #ffffff;
+  --text-primary: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #020617;
+    --text-primary: #f8fafc;
+    
+    /* Sedikit penyesuaian untuk dark mode agar lebih nyaman di mata */
+    --jsb-teal: #00e6d4;
+  }
+}
+
+/* Custom Utilities agar mudah dipanggil di TSX */
+@layer utilities {
+  .bg-jsb-teal { background-color: var(--jsb-teal); }
+  .text-jsb-teal { color: var(--jsb-teal); }
+  
+  .bg-jsb-blue { background-color: var(--jsb-blue); }
+  .text-jsb-blue { color: var(--jsb-blue); }
+  
+  .bg-jsb-yellow { background-color: var(--jsb-yellow); }
+  .text-jsb-yellow { color: var(--jsb-yellow); }
+
+  .border-jsb-teal { border-color: var(--jsb-teal); }
+  .service-card-glass {
+    @apply bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 transition-all duration-300;
+  }
+
+  .glass {
+    @apply bg-white/70 dark:bg-slate-950/70 backdrop-blur-md border-b border-white/20 dark:border-slate-800/50;
+  }
+
+}
 
 :root {
   --background: #ffffff;
