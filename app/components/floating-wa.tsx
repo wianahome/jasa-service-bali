@@ -29,17 +29,17 @@ export const FloatingWA = () => {
 
 
         {/* Label */}
-        <span className="pl-5 pr-3 text-sm text-green-600 font-bold tracking-wide uppercase group-hover:text-cyan-200 transition-colors">
+        <span className="pl-5 pr-2 text-sm text-green-600 font-bold tracking-wide uppercase group-hover:text-cyan-200 transition-colors">
           WhatsApp Kami
         </span>
 
         {/* SVG Icon Container */}
-        <div className="flex items-center justify-center w-20 h-20 rounded-full overflow-hidden">
+        <div className="flex items-center justify-center w-15 h-10 rounded-full overflow-hidden">
           <Image 
             src="/whatsapp.svg" 
             alt="WhatsApp Icon" 
-            width={50} 
-            height={50}
+            width={35} 
+            height={35}
             // Menggunakan priority agar icon langsung dimuat
             priority
           />
