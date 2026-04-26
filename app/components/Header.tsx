@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import { reportWaConversion } from "../lib/google-ads";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +28,8 @@ const Header = () => {
     { name: "Tentang Kami", href: "#" },
     { name: "Kontak Kami", href: "#" },
   ];
+
+  const waLink = "https://wa.me/628213162161?text=Halo%20Jasa%20Service%20Bali."
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass transition-colors duration-300">
@@ -62,19 +66,27 @@ const Header = () => {
           {/* Action Buttons (Toggle & WA) */}
           <div className="flex items-center gap-4">
             {/* Dark Mode Toggle */}
-            <button
+            {/* <button
               onClick={() => setIsDark(!isDark)}
               className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-yellow-400 transition-all hover:scale-110"
               aria-label="Toggle Mode"
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            </button> */}
+
+           
 
             {/* WhatsApp Button Desktop */}
-            <button className="hidden md:flex items-center gap-2 bg-jsb-blue text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-jsb-teal/20">
-              <MessageCircle size={18} />
+
+            <button 
+                onClick={() => reportWaConversion}
+                className="flex items-center gap-2 bg-jsb-blue text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-jsb-teal/20">
+            <MessageCircle size={18} />
+            <Link href={waLink} target="_blank">
               WhatsApp Us
+              </Link>
             </button>
+
 
             {/* Hamburger Mobile */}
             <button

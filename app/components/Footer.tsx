@@ -8,6 +8,8 @@ import {
   MapPin,  
   MessageCircle 
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -74,18 +76,13 @@ const Footer = () => {
 
             <div className="pt-4">
               <h4 className="text-sm font-bold uppercase tracking-widest mb-4 text-blue-200">Ikuti Kami</h4>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#1877F2] transition-all hover:-translate-y-1">
-                  <Phone className="w-5 h-5" />
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-black transition-all hover:-translate-y-1">
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.13-1.47-.13-.08-.26-.17-.38-.26v5.48c.01 3.82-2.06 7.46-5.73 8.54-3.47 1.07-7.4-.31-9.27-3.44-1.95-3.13-1.34-7.51 1.41-10.02 1.55-1.44 3.7-2.11 5.77-1.88v3.91c-1.25-.24-2.6.13-3.47 1.1-.96 1.03-1.12 2.61-.43 3.84.71 1.25 2.22 1.94 3.63 1.63 1.14-.24 2.05-1.21 2.18-2.35.02-1.35.01-2.71.01-4.07 0-3.61 0-7.21 0-10.81z"/>
-                  </svg>
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] transition-all hover:-translate-y-1">
-                  <Phone className="w-5 h-5" />
-                </a>
+              <div className="flex gap-6">
+                <Link href="https://www.instagram.com/jasaservicebalii" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/10 transition-all hover:-translate-y-1">
+                <Image src="/instagram.svg" alt="Logo" width="30" height="30" className="hover:opacity-80 transition-opacity" />
+                </Link>
+                 <Link href="https://www.tiktok.com/@jasaservicesbalii" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/10 transition-all hover:-translate-y-1">
+                <Image src="/tiktok.svg" alt="Logo" width="30" height="30" className="hover:opacity-80 transition-opacity" />
+                </Link>
               </div>
             </div>
           </div>

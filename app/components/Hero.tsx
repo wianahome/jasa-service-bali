@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { MessageCircle, ShieldCheck, Zap } from "lucide-react";
+import Link from "next/link";
+import { reportWaConversion } from "../lib/google-ads";
 
 const HeroService = () => {
   // Variasi animasi untuk staggered effect (muncul bergantian)
@@ -30,8 +32,10 @@ const HeroService = () => {
     },
   };
 
+    const waLink = "https://wa.me/628213162161?text=Halo%20Jasa%20Service%20Bali."
+
   return (
-    <section className="relative mt-20 w-full h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-screen flex items-center justify-center mt-25 overflow-hidden">
       {/* 1. BACKGROUND IMAGE (Menggunakan gambar edit terbaru) */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -90,18 +94,21 @@ const HeroService = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => reportWaConversion}
               className="bg-jsb-blue hover:bg-jsb-blue/90 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 transition-all shadow-xl shadow-jsb-teal/30"
             >
               <MessageCircle size={20} />
+              <Link href={waLink} target="_blank">
               Booking via WhatsApp
+              </Link>
             </motion.button>
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-slate-600 text-white hover:bg-slate-800 px-8 py-4 rounded-xl font-bold transition-all"
             >
               Lihat Daftar Harga
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
           {/* Fitur Utama - Mini Cards */}
