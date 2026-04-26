@@ -6,7 +6,7 @@ import Image from 'next/image';
 const categories = ["Semua", "AC", "Mesin Cuci", "Kulkas", "Chiller"];
 
 const galleryImages = [
-  { id: 1, src: "/gallery/ac-1.jpg", category: "AC", title: "Service AC Split" },
+  { id: 1, src: "/gallery/ac-1.png", category: "AC", title: "Service AC Split" },
   { id: 2, src: "/gallery/kulkas-1.jpg", category: "Kulkas", title: "Perbaikan Kulkas Inverter" },
   { id: 3, src: "/gallery/mc-1.jpg", category: "Mesin Cuci", title: "Ganti Modul Mesin Cuci" },
   { id: 4, src: "/gallery/chiller-1.jpg", category: "Chiller", title: "Maintenance Chiller Resto" },

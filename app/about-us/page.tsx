@@ -32,7 +32,7 @@ export default function AboutPage() {
              {/* Ganti dengan foto workshop atau tim Anda */}
             <div className="absolute inset-0 bg-gradient-to-t from-jsb-dark to-transparent z-10" />
             <Image 
-              src="/about-team.jpg" 
+              src="/about-tim.png" 
               alt="Tim Teknisi JSB" 
               fill 
               className="object-cover"

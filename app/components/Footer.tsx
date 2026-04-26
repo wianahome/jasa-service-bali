@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <p className="text-blue-100 leading-relaxed">
                 Jl.Pura Demak,<br />
-                Pemecuta Klod.Kec.Denpasar Barat,<br />
+                Pemecutan Klod.Kec.Denpasar Barat,<br />
                 Kota Denpasar, Bali 80199
               </p>
             </div>

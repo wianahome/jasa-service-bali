@@ -86,7 +86,7 @@ export default function ContactPage() {
               <h4 className="text-2xl font-bold mb-2">Respon Cepat via WA</h4>
               <p className="mb-6 opacity-90 text-sm">Klik tombol di bawah untuk konsultasi langsung dengan teknisi kami via WhatsApp.</p>
               <a 
-                href="https://wa.me/628xxxxxx" 
+                href="#" 
                 target="_blank"
                 className="block text-center bg-white text-[#25D366] font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
               >
@@ -102,7 +102,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h5 className="font-bold">Alamat Kami</h5>
-                  <p className="text-gray-400 text-sm mt-1">Jl. Sunset Road No. 88, Kuta, Bali</p>
+                  <p className="text-gray-400 text-sm mt-1">Jl.Pura Demak,
+                        Pemecutan Klod.Kec.Denpasar Barat,
+                        Kota Denpasar, Bali 80199</p>
                 </div>
               </div>
 
@@ -112,10 +114,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h5 className="font-bold">Telepon / WA</h5>
-                  <p className="text-gray-400 text-sm mt-1">+62 812-3456-7890</p>
+                  <p className="text-gray-400 text-sm mt-1">+62 821-3162-161</p>
                 </div>
               </div>
-
               <div className="flex gap-4">
                 <div className="bg-jsb-blue/10 p-3 rounded-lg text-jsb-blue">
                   <Clock className="w-6 h-6" />
@@ -132,7 +133,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h5 className="font-bold">Email</h5>
-                  <p className="text-gray-400 text-sm mt-1">info@jasaservicebali.com</p>
+                  <p className="text-gray-400 text-sm mt-1">jbelectronicofficial@gmail.com</p>
                 </div>
               </div>
             </div>

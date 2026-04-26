@@ -22,11 +22,11 @@ const Header = () => {
   }, [isDark]);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Layanan", href: "#" },
-    { name: "Gallery", href: "#" },
-    { name: "Tentang Kami", href: "#" },
-    { name: "Kontak Kami", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Layanan", href: "/layanan" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Tentang Kami", href: "/about-us" },
+    { name: "Kontak Kami", href: "/contact" },
   ];
 
   const waLink = "https://wa.me/628213162161?text=Halo%20Jasa%20Service%20Bali."
