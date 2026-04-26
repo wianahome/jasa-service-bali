@@ -7,7 +7,7 @@ import { Plus, Minus, HelpCircle } from "lucide-react";
 const faqs = [
   {
     question: "Berapa biaya kunjungan dan pengecekan?",
-    answer: "Untuk area jangkauan utama kami, biaya pengecekan adalah Rp 50.000. Namun, jika Anda memutuskan untuk melanjutkan ke tahap perbaikan, biaya pengecekan tersebut GRATIS (hanya membayar biaya servis/part saja)."
+    answer: "Untuk area jangkauan utama kami, biaya pengecekan adalah Rp 100.000. Namun, jika Anda memutuskan untuk melanjutkan ke tahap perbaikan, biaya pengecekan tersebut GRATIS (hanya membayar biaya servis/part saja)."
   },
   {
     question: "Apakah ada garansi setelah perbaikan?",

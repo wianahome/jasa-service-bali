@@ -36,7 +36,7 @@ const Footer = () => {
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <a href="https://wa.me/6281322124442" className="text-lg hover:text-jsb-teal transition-colors">
-                  0813 221 24442
+                  0821-3162-161
                 </a>
               </li>
               <li className="flex items-center gap-4 group">
@@ -44,7 +44,7 @@ const Footer = () => {
                   <Phone className="w-5 h-5" />
                 </div>
                 <a href="tel:081322124442" className="text-lg hover:text-jsb-teal transition-colors">
-                  0813 221 24442
+                  0821-3162-161
                 </a>
               </li>
               <li className="flex items-center gap-4 group">
@@ -66,9 +66,9 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-jsb-teal" />
               </div>
               <p className="text-blue-100 leading-relaxed">
-                Jl. Dukuh Sari Gg. Beo,<br />
-                Kec. Denpasar Selatan,<br />
-                Kota Denpasar, Bali
+                Jl.Pura Demak,<br />
+                Pemecuta Klod.Kec.Denpasar Barat,<br />
+                Kota Denpasar, Bali 80199
               </p>
             </div>
 
