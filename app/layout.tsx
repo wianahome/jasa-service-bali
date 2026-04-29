@@ -31,6 +31,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+
+      <head>
+        {/* Tambahkan baris ini tepat di sini */}
+        <meta 
+          httpEquiv="Content-Security-Policy" 
+          content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';" 
+        />
+      </head>
+      
       <body className="min-h-full flex flex-col">
         {/* Google Tag Utama */}
         <Script
